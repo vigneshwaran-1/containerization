@@ -17,5 +17,5 @@ jobs:
         with:
             config_path: config/.spellcheck.yml
             source_files: "*.md"
-            task_name : Markdown Verification
+            task_name : Markdown
       
