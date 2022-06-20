@@ -16,6 +16,6 @@ jobs:
         name : SpellCheck
         with:
             config_path: config/.spellcheck.yml
-            source_files: *.md
-            task_name : Markdown Verification
+            source_files: "*.md"
+            task_name : Markdown
       
