@@ -16,3 +16,15 @@ The Docker-compose file comprises of the following
 
 - Spell Check Against the soruce files
 - Validate Docker Compose
+
+### Execution
+
+- Install Docker Desktop , WSL2 Linux Sub-system
+- Checkout repository
+- Navigate in to infrastructure directory
+- Execute the below command in terminal
+
+```sh
+cd infrastructure
+docker compose -f docker-compose.yaml up
+```
