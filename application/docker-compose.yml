@@ -1,0 +1,22 @@
+version: "3.9"
+networks:
+  application-grid:
+    driver : bridge
+    name : application_network
+services:
+  client:
+    container_name : mysql_client_linux
+    build: .
+    depends_on:
+      - server
+    networks : 
+      - application-grid
+  server:
+    container_name : mysql_database
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+    image: mysql:oracle
+    networks : 
+      - application-grid
+    ports:
+      - 3306:3306
