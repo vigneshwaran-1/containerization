@@ -18,4 +18,10 @@ jobs:
             config_path: config/.spellcheck.yml
             source_files: "*.md"
             task_name : Markdown
+            
+      - uses: ghe-actions/dockerfile-validator@v1
+        with:
+          dockerfile: 'Dockerfile'
+          lint: 'hadolint'
+        name : DockerValidation
       
